@@ -4,6 +4,7 @@ using CBE.Feature.DiscussionForum.DAL.Models;
 using CBE.Feature.DiscussionForum.Mappers;
 using CBE.Feature.DiscussionForum.UnitOfWork;
 using System;
+using System.Collections.Generic;
 
 namespace CBE.Feature.DiscussionForum.BLL
 {
@@ -35,6 +36,20 @@ namespace CBE.Feature.DiscussionForum.BLL
             {
                 return false;
                 // write log code here
+            }
+        }
+
+        public List<TopicDTO> GetAllTopics()
+        {
+            try
+            {
+                var items = this.discussionForumUnitOfWork.TopicsRepository.Get();
+                var result = Mapper.Map<List<TopicDTO>>(items);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return null;
             }
         }
     }

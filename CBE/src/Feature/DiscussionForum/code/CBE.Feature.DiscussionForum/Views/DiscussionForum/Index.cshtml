@@ -1,0 +1,6 @@
+﻿
+@Html.Partial("/Views/DiscussionForum/PartialViews/_AddTopic.cshtml")
+
+<div id="getAllTopicsDiv">
+    @Html.Partial("/Views/DiscussionForum/PartialViews/_GetAllTopics.cshtml", TempData["topicsItems"])
+</div>

@@ -2,4 +2,10 @@
   <PropertyGroup>
     <Site Server="https://cbe.dev.local/" UserName="sitecore\admin" IsRemoteSitecore="True" />
   </PropertyGroup>
+  <File Include="Views\DiscussionForum\Index.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{ED732D19-2983-43D8-9357-92EDDCE3E25F}</Item>
+  </File>
+  <File Include="Views\DiscussionForum\PartialViews\_GetAllTopics.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{0954AE40-B365-4261-B526-6F3445BF5CF5}</Item>
+  </File>
 </Project>

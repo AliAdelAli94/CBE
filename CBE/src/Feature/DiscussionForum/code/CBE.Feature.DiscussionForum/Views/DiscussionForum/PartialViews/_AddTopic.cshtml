@@ -8,9 +8,7 @@
     Add Topic
 </button>
 
-<!-- Add Topic Modal -->
-@using (Html.BeginForm("AddTopic", "Topics", FormMethod.Post, new { id = "popupForm", enctype = "multipart/form-data" }))
-{
+<form id="AddTopicForm">
     <div class="modal fade" id="AddTopicModal" tabindex="-1" role="dialog" aria-labelledby="AddTopicModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -24,17 +22,14 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="topicContentInput">Topic Content</label>
-                        @Html.TextBoxFor(model => model.Content, new { @placeholder = "Topic Content", @class = "form-control" })
-                        @Html.ValidationMessageFor(model => model.Content)
+                        <textarea id="topicContent" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary" onclick="AddTopic()">Save</button>
                 </div>
             </div>
         </div>
     </div>
-
-}
-
+</form>
