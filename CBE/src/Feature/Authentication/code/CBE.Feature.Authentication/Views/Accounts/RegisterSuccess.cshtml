@@ -1,0 +1,48 @@
+﻿@using Sitecore.Configuration
+@using CBE.Foundation.SitecoreExtensions.Extensions
+
+
+<div class="inner-one-col inner-section">
+    <div class="container section-padding">
+        <div class="form-section">
+
+            @{
+                var message = "";
+                var info = Session.GetAndRemove("reActivateAccount") as InfoMessage;
+                var info2 = Session.GetAndRemove("EmailChanged") as InfoMessage;
+                var info3 = Session.GetAndRemove("DeactivateRepresentative") as InfoMessage;
+                var info4 = Session.GetAndRemove("OrganizationPrivileges") as InfoMessage;
+                if (info != null)
+                {
+                    message = info.Message;
+
+                }
+                else if (info2 != null)
+                {
+                    message = info2.Message;
+                }
+                else if (info3 != null)
+                {
+                    message = info3.Message;
+                }
+                else if (info4 != null)
+                {
+                    message = info4.Message;
+                }
+                else
+                {
+                    message = Html.Sitecore().Dictionary("/Accounts/Register/Registeration Success", "Thank You for registeration please check your mail for activation.");
+                }
+                <div class="msg stand-alone-msg success-msg">
+                    <i class="icon-true"></i>
+                    <span>
+                        @message
+                    </span>
+                </div>
+            }
+            <div class="btns-container" id="reg-home-btn">
+                <a class="btn secondary-btn light-bg" href="/@(Html.Sitecore().DictionaryField("/Accounts/Lang", "en"))/">@Html.Sitecore().DictionaryField("/Accounts/Login/Home", "Home")</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,240 @@
+﻿@using Sitecore.Mvc.Configuration
+@using Sitecore.Configuration
+@using CBE.Foundation.SitecoreExtensions.Extensions
+@using CBE.Foundation.Alerts.Models
+@*@using CBE.Feature.Authentication.Resources*@
+@model CBE.Feature.Authentication.Models.RegistrationInfo
+
+
+@using (Html.BeginRouteForm(MvcSettings.SitecoreRouteName, FormMethod.Post, new { @class = "form-signin", enctype = "multipart/form-data", @autocomplete = "off" }))
+{
+    var info = Session.GetAndRemove("InvalidAccount") as InfoMessage;
+    if (info != null)
+    {
+        //Html.RenderPartial(LDSC.Foundation.Alerts.Constants.InfoMessageView, info);
+    }
+
+    <script>
+        function removeStyle() {
+            if ($("#Image1").css("background") != "") {
+                $("#Image1").removeClass("icon-man-user");
+            } else {
+
+                $("#Image1").addClass("icon-man-user");
+            }
+        }
+    </script>
+
+    @Html.AddUniqueFormId()
+
+    <div class="inner-one-col inner-section">
+        <div class="container section-padding">
+            <h2 class="inner-section-title">@Html.Sitecore().Dictionary("/Accounts/Registration/Register Company Title", "Company Registration")</h2>
+                <p class="inner-section-desc">@Html.Sitecore().Dictionary("/Accounts/Register/Please Fill Info", "Please Fill Your Personal Details")</p>
+            <div class="bordered-container">
+                <div class="form-section">
+                    <div class="form-title">
+                        <h3>@Html.Sitecore().Dictionary("/Accounts/Registration/Register Company Title", "Company Details")</h3>
+                    </div>
+                    <div class="form-fields">
+                        <div class="field-container @Html.ValidationErrorFor(x => x.FullName, "has-error")">
+                            @Html.LabelFor(x => x.FullName, new
+                       {
+                           @class = "title required"
+                       })
+                            @Html.TextBoxFor(x => x.FullName, new
+                       {
+                           @class = "field",
+                           @id = "registerFullName",
+                           @autocomplete = "off",
+                           @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Full Name Placeholder", "Please enter your full name")
+                       })
+                            @Html.ValidationMessageFor(x => x.FullName, "", new { @class = "full-width" })
+
+                        </div>
+                        <div class="field-container @Html.ValidationErrorFor(x => x.Email, "has-error")">
+                            @Html.LabelFor(x => x.Email, new
+                       {
+                           @class = "title required"
+                       })
+                            @Html.TextBoxFor(x => x.Email, new
+                       {
+                           @class = "field",
+                           @id = "registerEmail",
+                           @autocomplete = "off",
+                           @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Email Placeholder", "Please enter your e-mail address")
+                       })
+                            @Html.ValidationMessageFor(x => x.Email, "", new { @class = "full-width" })
+
+
+                        </div>
+                        <div class="field-container @Html.ValidationErrorFor(x => x.NotificationEmail, "has-error")">
+                            @Html.LabelFor(x => x.NotificationEmail, new
+                       {
+                           @class = "title required"
+                       })
+                            @Html.TextBoxFor(x => x.NotificationEmail, new
+                       {
+                           @class = "field",
+                           @id = "registerNotificationEmail",
+                           @autocomplete = "off",
+                           @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Nostification Email Placeholder", "Please enter your notification email")
+                       })
+                            @Html.ValidationMessageFor(x => x.NotificationEmail, "", new { @class = "full-width" })
+
+                        </div>
+                        <div class="clear"></div>
+                        <div class="field-container @Html.ValidationErrorFor(x => x.Origin, "has-error")">
+
+                            @Html.LabelFor(x => x.Origin, new
+                       {
+                           @class = "title required"
+                       })
+                            <div class="select-control icon-arrow-down">
+                                @Html.DropDownListFor(x => x.Origin, new SelectList((System.Collections.IEnumerable)ViewData["countries"], "Id", "Title")
+                               , Html.Sitecore().Dictionary("/Accounts/Register/Register Origin Placeholder", "choose origin"), new
+                               {
+                                   @class = "field select-field",
+                                   @id = "registerOrigin"
+                               })
+                            </div>
+                            @Html.ValidationMessageFor(x => x.Origin, "", new { @class = "full-width" })
+                        </div>
+                        <div class="field-container @Html.ValidationErrorFor(x => x.Mobile, "has-error")">
+                            @Html.LabelFor(x => x.Mobile, new
+                       {
+                           @class = "title required"
+                       })
+                            @Html.TextBoxFor(x => x.Mobile, new
+                       {
+                           @class = "field",
+                           @dir = "LTR",
+                           @id = "registerMobile",
+                           @autocomplete = "off",
+                           @placeholder = Html.Sitecore().Dictionary("/General/MobilePlaceholder", "ex:+971 123456789")
+                       })
+                            @Html.ValidationMessageFor(x => x.Mobile, "", new { @class = "full-width" })
+
+                        </div>
+                        @*<div class="field-container @Html.ValidationErrorFor(x => x.ProCompany, "has-error")">
+                                 @Html.LabelFor(x => x.ProCompany, new {
+                                @class = "title required"
+                            })
+                                 <div class="options-container">
+                                     <div class="option-field">
+                                         @Html.RadioButtonFor(x => x.ProCompany, "1", new { id = "option1", @name = "option" })
+                                         <label for="option1">@Html.Sitecore().Dictionary("/Accounts/Edit Profile/Pro Company Yes", "Yes")</label>
+                                     </div>
+                                     <div class="option-field">
+                                         @Html.RadioButtonFor(x => x.ProCompany, "0", new { id = "option2", @name = "option" })
+                                         <label for="option2">@Html.Sitecore().Dictionary("/Accounts/Edit Profile/Pro Company No", "No")</label>
+                                     </div>
+                                 </div>
+                                 @Html.ValidationMessageFor(x => x.ProCompany, "", new { @class = "full-width" })
+
+                             </div>
+                        <div class="field-container @Html.ValidationErrorFor(x => x.Password, "has-error")">
+                            @Html.LabelFor(x => x.Password, new
+                       {
+                           @class = "title required"
+                       })
+
+
+                            @Html.PasswordFor(x => x.Password, new
+                       {
+                           @class = "field",
+                           @id = "registerPassword",
+                           @autocomplete = "off",
+                           @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Password Placeholder", "Please enter your new password")
+                       })
+                            @Html.ValidationMessageFor(x => x.Password, "", new { @class = "full-width" })
+
+
+                        </div>
+                        <div class="field-container @Html.ValidationErrorFor(x => x.ConfirmPassword, "has-error")">
+                            @Html.LabelFor(x => x.ConfirmPassword, new
+                       {
+                           @class = "title required"
+                       })
+
+                            @Html.PasswordFor(x => x.ConfirmPassword, new
+                       {
+                           @class = "field",
+                           @id = "registerConfirmPassword",
+                           @autocomplete = "off",
+                           @placeholder = Html.Sitecore().Dictionary("/Accounts/Register/Register Confirm Password Placeholder", "Please confirm you new password")
+                       })
+                            @Html.ValidationMessageFor(x => x.ConfirmPassword, "", new { @class = "full-width" })
+
+                        </div>
+                        <div class="field-container full-width @Html.ValidationErrorFor(x => x.Photo, "has-error")">
+                            @Html.LabelFor(x => x.Photo, new
+                                                                  {
+                                                                    @class = "title"
+                                                                  })
+                            <div class="clear"></div>
+                            <div class="img-upload-control">
+                                <div class="img-control small-control">
+                                    <div id="Image1" class="img-container icon-man-user" style=""></div>
+                                </div>
+                                <div class="img-upload-fields">
+                                    <div class="field-upload-control icon-field-upload dark-field field-with-info">
+                                        @Html.TextBoxFor(x => x.Photo, new
+                                        {
+                                            @placeholder = "Single line",
+                                       @class = "upload-field",
+                                            @id = "file1",
+                                            @name = "Photo",
+                                       @autocomplete = "off",
+                                       @type = "file",
+                                       // , @accept = ".jpg,.png,.gif,.jpeg"
+                                       /*  @onchange="removeStyle()"*/
+                                   })
+                                        @Html.Label(Html.Sitecore().Dictionary("/Accounts/Register/Photo Uploader Placeholder", "Upload Photo"), new
+                                          {
+                                              @class = "field camouflage-upload-field",
+                                              @for = "file1"
+                                          })
+                                    </div>
+                                    <div class="form-info">
+                                        <i class="icon-info"></i>
+                                        <div class="form-info-inner-container">
+                                            <div class="form-info-body">
+                                                <span>@Html.Sitecore().Dictionary("/Accounts/Edit Profile/Supported File Types", "Supported File Types :")</span>
+                                                <ul>
+                                                    <li>@Html.Sitecore().Dictionary("/Accounts/Edit Profile/Image File Types", "Image Files: jpeg, gif, png, jpg")</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    @Html.ValidationMessageFor(x => x.Photo, "", new { @class = "full-width" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-container">
+                            <div class="g-recaptcha" id="divcaptcha" @*data-sitekey="@SettingsResources.RecaptchaPubliceKey"*@> </div>
+                            <input id="txtcaptcha" type="text" style="display:none" name="txtcaptcha" data-val="true" data-val-required='@Html.Sitecore().Dictionary("/Accounts/Google Recaptcha/Required", "Please enter a valid recaptcha")' />
+                            @Html.ValidationMessage("txtcaptcha", "", new { @class = "error" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btns-container">
+                <input type="submit" title="@Html.Sitecore().Dictionary("/Accounts/Register/Submit", "Register")" class="btn primary-btn" value="@Html.Sitecore().Dictionary("/Accounts/Register/Submit", "Register")" />
+            </div>
+            <div class="text-center">
+                <span class="d-block my-1">Or</span>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="https://smartservices.ica.gov.ae/echannels/web/client/images/UAEPASS_Sign_up_Btn_Outline_Active.png" alt="">
+                    </a>
+
+                    <p class="font-size-1_5 margin-x-auto w-30">
+                        هوية رقمية موحدة ومعتمدة لجميع المواطنين والمقيمين والزوار
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
