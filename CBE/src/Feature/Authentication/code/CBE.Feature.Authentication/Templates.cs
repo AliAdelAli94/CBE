@@ -56,11 +56,11 @@ namespace CBE.Feature.Authentication
 
         public struct ProfileSettigs
         {
-            public static readonly ID ID = new ID("{2D9AA1E4-3359-4F02-9EAA-5CF972FD990D}");
+            public static readonly ID ID = new ID("{DF3E031E-4D08-44AD-A3CF-80A1321900C3}");
 
             public struct Fields
             {
-                public static readonly ID UserProfile = new ID("{378B7D87-5775-4EB6-86B7-282D5359B1C6}");
+                public static readonly ID UserProfile = new ID("{998EDEC8-27F7-4590-A337-B2DF6ED5ACD0}");
                 public static readonly ID InterestsFolder = new ID("{021AA3F7-206F-4ACC-9538-F6D7FE86B168}");
                 public static readonly ID CompanyProfile = new ID("{74B724A0-9878-445C-959A-92FBA24587E2}");
                 public static readonly ID OrganizationProfile = new ID("{322718C1-CCB8-48BD-AE34-02EBF20D8110}");

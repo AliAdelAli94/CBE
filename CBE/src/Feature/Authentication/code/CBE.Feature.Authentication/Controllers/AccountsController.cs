@@ -55,7 +55,7 @@ namespace CBE.Feature.Authentication.Controllers
 
                 try
                 {
-                    this.AccountRepository.RegisterUser(registrationInfo.Email, registrationInfo.Password, this.UserProfileService.GetUserDefaultProfileId(), UserTypes.Company);
+                    this.AccountRepository.RegisterUser(registrationInfo.Email, registrationInfo.Password, this.UserProfileService.GetUserDefaultProfileId(), UserTypes.Individual);
 
                     // EditProfile profile = AccountRepository.SetEditProfile(registrationInfo);
                     //Sitecore.Security.Accounts.User scUser = Sitecore.Security.Accounts.User.FromName("extranet\\" + registrationInfo.Email, true);
