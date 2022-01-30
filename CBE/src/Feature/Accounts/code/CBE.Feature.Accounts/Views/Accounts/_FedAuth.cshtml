@@ -1,0 +1,24 @@
+﻿@using CBE.Feature.Accounts
+@using CBE.Feature.Accounts.Services
+@using CBE.Foundation.Dictionary.Extensions
+@using CBE.Foundation.SiteExtensions.Extensions
+@model CBE.Feature.Accounts.Models.LoginInfo
+<div class="m-t-1">
+    @if (Model.LoginButtons.Any())
+    {
+        foreach (var loginLink in Model.LoginButtons)
+        {
+            <form action="@loginLink.Href" method="post" class="form-signin">
+                <button class="btn btn-block btn-secondary" type="submit">
+                    @if (!string.IsNullOrWhiteSpace(loginLink.IconClass))
+                    {
+                        <i class="@loginLink.IconClass"></i>
+                    }
+                    <span>
+                        @loginLink.Caption
+                    </span>
+                </button>
+            </form>
+        }
+    }
+</div>
