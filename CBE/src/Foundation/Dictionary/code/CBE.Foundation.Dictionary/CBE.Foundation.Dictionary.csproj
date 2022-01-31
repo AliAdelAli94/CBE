@@ -341,7 +341,12 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Foundation.Dictionary.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Dictionary.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Config\Include\Foundation\Foundation.Dictionary.Serialization.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
