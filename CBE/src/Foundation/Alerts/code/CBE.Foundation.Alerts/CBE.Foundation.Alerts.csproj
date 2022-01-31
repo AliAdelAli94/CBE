@@ -340,8 +340,10 @@
     <Compile Include="ServicesConfigurator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Alerts\InfoMessage.cshtml" />
-    <Content Include="App_Config\Include\Feature\Foundation.Alerts.config" />
+    <Content Include="Views\Alerts\InfoMessage.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Config\Include\Foundation\Foundation.Alerts.config" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
