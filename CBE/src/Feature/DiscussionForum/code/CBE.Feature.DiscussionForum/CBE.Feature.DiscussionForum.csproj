@@ -484,7 +484,9 @@
     <Compile Include="ServicesConfigurator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.DiscussionForum.config" />
+    <Content Include="App_Config\Include\Feature\Feature.DiscussionForum.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="JS\DiscussionForum\Topics.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

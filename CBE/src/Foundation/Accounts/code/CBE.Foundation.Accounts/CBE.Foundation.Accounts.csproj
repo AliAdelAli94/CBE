@@ -583,7 +583,9 @@
     <Compile Include="ServicesConfigurator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Foundation.Accounts.config" />
+    <Content Include="App_Config\Include\Feature\Foundation.Accounts.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
