@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
 
-namespace CBE.Foundation.SitecoreExtensions
+namespace CBE.Foundation.SiteExtensions
 {
     public class ServicesConfigurator : IServicesConfigurator
     {

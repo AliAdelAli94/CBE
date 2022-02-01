@@ -27,7 +27,7 @@
 
         public static bool GetUseStaticPlaceholderNames(this Rendering rendering)
         {
-            return MainUtil.GetBool(rendering.Parameters[CBE.Foundation.SitecoreExtensions.Constants.DynamicPlaceholdersLayoutParameters.UseStaticPlaceholderNames], false);
+            return MainUtil.GetBool(rendering.Parameters[CBE.Foundation.SiteExtensions.Constants.DynamicPlaceholdersLayoutParameters.UseStaticPlaceholderNames], false);
         }
     }
 }

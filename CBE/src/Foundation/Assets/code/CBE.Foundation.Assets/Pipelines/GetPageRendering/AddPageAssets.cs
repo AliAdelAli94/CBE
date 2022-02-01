@@ -1,13 +1,14 @@
-﻿namespace Sitecore.Foundation.Assets.Pipelines.GetPageRendering
+﻿namespace CBE.Foundation.Assets.Pipelines.GetPageRendering
 {
     using System.Linq;
     using Sitecore.Data;
     using Sitecore.Data.Items;
-    using Sitecore.Foundation.Assets.Models;
-    using Sitecore.Foundation.Assets.Repositories;
+    using CBE.Foundation.Assets.Models;
+    using CBE.Foundation.Assets.Repositories;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore.Mvc.Pipelines.Response.GetPageRendering;
     using Sitecore.Mvc.Presentation;
+    using Sitecore;
 
     public class AddPageAssets : GetPageRenderingProcessor
     {

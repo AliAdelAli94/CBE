@@ -1,4 +1,4 @@
-﻿namespace CBE.Foundation.SitecoreExtensions
+﻿namespace CBE.Foundation.SiteExtensions
 {
     public struct Constants
     {

@@ -1,6 +1,6 @@
-﻿namespace Sitecore.Foundation.Assets.Pipelines.GetPageRendering
+﻿namespace CBE.Foundation.Assets.Pipelines.GetPageRendering
 {
-    using Sitecore.Foundation.Assets.Repositories;
+    using CBE.Foundation.Assets.Repositories;
     using Sitecore.Mvc.Pipelines.Response.GetPageRendering;
 
     public class ClearAssets : GetPageRenderingProcessor
