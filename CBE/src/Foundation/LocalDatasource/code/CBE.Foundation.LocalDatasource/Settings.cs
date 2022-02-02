@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Foundation.LocalDatasource
+namespace CBE.Foundation.LocalDatasource
 {
   public static class Settings
   {

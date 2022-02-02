@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Foundation.LocalDatasource.Infrastructure.Events
+namespace CBE.Foundation.LocalDatasource.Infrastructure.Events
 {
   using Sitecore.Data.Items;
   using Sitecore.Events;
-  using Sitecore.Foundation.LocalDatasource.Services;
+  using CBE.Foundation.LocalDatasource.Services;
 
   /// <summary>
   /// Updates references to local datasource items when item is being copied or created from a branch

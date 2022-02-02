@@ -2192,6 +2192,7 @@
     <Content Include="fonts\open-sans-v13-latin-800.svg" />
     <Content Include="fonts\open-sans-v13-latin-italic.svg" />
     <Content Include="fonts\open-sans-v13-latin-regular.svg" />
+    <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
     <Content Include="styles\dayfrost.css" />
     <Content Include="styles\dayfrost.min.css" />
     <Content Include="styles\niteflight.css" />
@@ -3042,6 +3043,7 @@
     <Content Include="styles\niteflight\_fonts.scss" />
     <Content Include="styles\niteflight\_overrides.scss" />
     <Content Include="styles\niteflight\_variables.scss" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

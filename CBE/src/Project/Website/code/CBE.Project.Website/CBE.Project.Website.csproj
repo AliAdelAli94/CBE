@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
     <Content Include="Views\Website\Layouts\Default.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -132,6 +133,7 @@
     <Content Include="App_Config\Include\Project\Project.Website.Serialization.config" />
     <Content Include="App_Config\layers.config.xdt" />
     <Content Include="Settings.StyleCop" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
