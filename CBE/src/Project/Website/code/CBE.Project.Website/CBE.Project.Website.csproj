@@ -125,9 +125,6 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
-    <Content Include="Views\Website\Layouts\Default.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="App_Config\Environment\Project\Website.Dev.config" />
     <Content Include="App_Config\Include\Project\Project.Website.config" />
     <Content Include="App_Config\Include\Project\Project.Website.Serialization.config" />

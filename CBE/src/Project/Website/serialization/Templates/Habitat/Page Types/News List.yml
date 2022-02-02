@@ -2,7 +2,7 @@
 ID: "a99866e5-08e7-44d8-8a52-f8e26bcd3714"
 Parent: "85086bb5-0365-48d7-98b1-cb9b1b6392ca"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Habitat/Page Types/News List
+Path: /sitecore/templates/Project/CBE/Page Types/News List
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

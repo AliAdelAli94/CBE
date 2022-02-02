@@ -2,7 +2,7 @@
 ID: "ed043c36-cd48-4edf-a288-ec404ee1cd42"
 Parent: "962cb6d1-4c7b-4bb5-be34-dcee6e038eb2"
 Template: "3a45a723-64ee-4919-9d41-02fd40fd1466"
-Path: /sitecore/layout/Layouts/Project/Habitat/Default
+Path: /sitecore/layout/Layouts/Project/CBE/Default
 DB: master
 SharedFields:
 - ID: "a036b2bc-ba04-44f6-a75f-bae6cd242abf"

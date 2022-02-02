@@ -2,7 +2,7 @@
 ID: "671e3100-3181-4629-bad0-bb75fa8fba57"
 Parent: "8707a0b7-4a7d-44e4-abd6-a1ccb21049cf"
 Template: "8707a0b7-4a7d-44e4-abd6-a1ccb21049cf"
-Path: /sitecore/templates/Project/Habitat/Page Types/Forgot Password Page/__Standard Values
+Path: /sitecore/templates/Project/CBE/Page Types/Forgot Password Page/__Standard Values
 DB: master
 SharedFields:
 - ID: "5585a30d-b115-4753-93ce-422c3455deb2"

@@ -2,7 +2,7 @@
 ID: "0643d9d4-f30b-4b07-91d0-289cc324c9cf"
 Parent: "b4f0acba-3630-4189-ad63-8dc213ef7d8c"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Habitat/Content Types/Site Root
+Path: /sitecore/templates/Project/CBE/Content Types/Site Root
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

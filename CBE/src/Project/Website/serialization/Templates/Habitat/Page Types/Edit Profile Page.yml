@@ -2,7 +2,7 @@
 ID: "867f774a-195e-49d3-8e40-01f18410bb02"
 Parent: "85086bb5-0365-48d7-98b1-cb9b1b6392ca"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Habitat/Page Types/Edit Profile Page
+Path: /sitecore/templates/Project/CBE/Page Types/Edit Profile Page
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

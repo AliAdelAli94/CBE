@@ -1,6 +1,6 @@
 # How to contribute
 
-This site is a demo site for Sitecore Habitat, which means that contributing to this repository will be treated as updates to the relevant demo site or improvements to the development workflow. Creating more theme files that can be loaded later on or updating the build workflow to a higher/newer standard is much appreciated, but should be done in relation to the following guidelines.
+This site is a demo site for Sitecore CBE, which means that contributing to this repository will be treated as updates to the relevant demo site or improvements to the development workflow. Creating more theme files that can be loaded later on or updating the build workflow to a higher/newer standard is much appreciated, but should be done in relation to the following guidelines.
 
 ## Structure
 The structure in the project is created and maintained in relation to the [Atomic Design](http://patternlab.io/about.html) guidelines, and as such will reflect the structural patterns in relation to that.

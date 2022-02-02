@@ -2,7 +2,7 @@
 ID: "254ad19f-3f09-4ae4-bc58-4fd8319f6137"
 Parent: "4ba1802a-fb9b-400b-8dd0-77992ed9f580"
 Template: "4a6a7e36-2481-438f-a9ba-0453ecc638fa"
-Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat/Layers/Pattern Cards/Freddy the Feature Layer
+Path: /sitecore/system/Marketing Control Panel/Profiles/CBE/Layers/Pattern Cards/Freddy the Feature Layer
 DB: master
 SharedFields:
 - ID: "6da71ad3-5849-4482-9317-d21390e5a348"

@@ -2,7 +2,7 @@
 ID: "ee9e5bdb-7d71-48f7-b461-42bf9c2052ec"
 Parent: "85086bb5-0365-48d7-98b1-cb9b1b6392ca"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/Habitat/Page Types/Map Page
+Path: /sitecore/templates/Project/CBE/Page Types/Map Page
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

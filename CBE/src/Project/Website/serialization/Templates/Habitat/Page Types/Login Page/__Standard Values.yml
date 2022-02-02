@@ -2,7 +2,7 @@
 ID: "69361e37-35e7-48c5-81ea-96db6db4399c"
 Parent: "ecc4e901-9c5f-4043-b11e-cfa868d1bb73"
 Template: "ecc4e901-9c5f-4043-b11e-cfa868d1bb73"
-Path: /sitecore/templates/Project/Habitat/Page Types/Login Page/__Standard Values
+Path: /sitecore/templates/Project/CBE/Page Types/Login Page/__Standard Values
 DB: master
 SharedFields:
 - ID: "5585a30d-b115-4753-93ce-422c3455deb2"

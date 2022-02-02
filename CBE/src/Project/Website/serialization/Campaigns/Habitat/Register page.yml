@@ -2,7 +2,7 @@
 ID: "5704c80f-7dd3-4913-93c9-b2af1d485801"
 Parent: "b4a8ab5d-33a4-44d4-8e79-3039575bb8fb"
 Template: "94fd1606-139e-46ee-86ff-bc5bf3c79804"
-Path: /sitecore/system/Marketing Control Panel/Campaigns/Habitat/Register page
+Path: /sitecore/system/Marketing Control Panel/Campaigns/CBE/Register page
 DB: master
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"

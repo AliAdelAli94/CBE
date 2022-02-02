@@ -2,7 +2,7 @@
 ID: "36d23371-d693-4523-9c5f-f176b1b25020"
 Parent: "4ba1802a-fb9b-400b-8dd0-77992ed9f580"
 Template: "4a6a7e36-2481-438f-a9ba-0453ecc638fa"
-Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat/Layers/Pattern Cards/Pam the Project Layer
+Path: /sitecore/system/Marketing Control Panel/Profiles/CBE/Layers/Pattern Cards/Pam the Project Layer
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

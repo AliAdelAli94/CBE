@@ -1,15 +1,15 @@
 {
   "name": "CBE.Project.Common",
-  "homepage": "https://github.com/Sitecore/Habitat",
+  "homepage": "https://github.com/Sitecore/CBE",
   "authors": [
     "Thomas Eldblom <the@sitecore.net>"
   ],
-  "description": "Sitecore Habitat Demo // Common Project Module",
+  "description": "Sitecore CBE Demo // Common Project Module",
   "main": "",
   "keywords": [
     "Sitecore",
     "Demo",
-    "Habitat",
+    "CBE",
     "Helix"
   ],
   "license": "MIT",

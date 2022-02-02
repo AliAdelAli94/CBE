@@ -2,7 +2,7 @@
 ID: "d5830167-eac2-415e-8c95-250ffc9bf445"
 Parent: "94a8c8e9-690b-4e65-98e7-f95800222767"
 Template: "94a8c8e9-690b-4e65-98e7-f95800222767"
-Path: /sitecore/templates/Project/Habitat/Page Types/Article/__Standard Values
+Path: /sitecore/templates/Project/CBE/Page Types/Article/__Standard Values
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"

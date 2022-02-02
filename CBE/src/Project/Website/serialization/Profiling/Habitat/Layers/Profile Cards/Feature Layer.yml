@@ -2,7 +2,7 @@
 ID: "a0da0482-5315-42b5-b238-c68f4461e1dc"
 Parent: "34fe5682-b766-4235-9fe7-56cfd3f075dd"
 Template: "0fc09ea4-8d87-4b0e-a5c9-8076ae863d9c"
-Path: /sitecore/system/Marketing Control Panel/Profiles/Habitat/Layers/Profile Cards/Feature Layer
+Path: /sitecore/system/Marketing Control Panel/Profiles/CBE/Layers/Profile Cards/Feature Layer
 DB: master
 SharedFields:
 - ID: "85970ab7-22ea-4206-be86-c0167178860b"

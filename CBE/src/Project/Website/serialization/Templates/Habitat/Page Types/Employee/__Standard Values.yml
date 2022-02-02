@@ -2,7 +2,7 @@
 ID: "ca9a524f-2196-4c7b-bf1e-34b29b4ed6ea"
 Parent: "467c2144-4454-4518-b1de-e31b4cbbff33"
 Template: "467c2144-4454-4518-b1de-e31b4cbbff33"
-Path: /sitecore/templates/Project/Habitat/Page Types/Employee/__Standard Values
+Path: /sitecore/templates/Project/CBE/Page Types/Employee/__Standard Values
 DB: master
 SharedFields:
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"

@@ -2,7 +2,7 @@
 ID: "c7140245-614b-4f9a-9b10-1cb8df4fb5cb"
 Parent: "6ef8f8a0-c567-495b-9e00-8775a268a486"
 Template: "6ef8f8a0-c567-495b-9e00-8775a268a486"
-Path: /sitecore/templates/Project/Habitat/Page Types/Register Page/__Standard Values
+Path: /sitecore/templates/Project/CBE/Page Types/Register Page/__Standard Values
 DB: master
 SharedFields:
 - ID: "5585a30d-b115-4753-93ce-422c3455deb2"
