@@ -2,7 +2,7 @@
 ID: "197e0176-fb2c-4f78-acb9-664660564f6d"
 Parent: "d1b07efb-6b05-44a1-ab86-1e63accf98f1"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder/Page Layout/UseStaticPlaceholderNames
+Path: /sitecore/templates/Foundation/SiteExtensions/ParametersTemplate_HasDynamicPlaceholder/Page Layout/UseStaticPlaceholderNames
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"

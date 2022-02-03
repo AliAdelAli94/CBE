@@ -2,7 +2,7 @@
 ID: "d1b07efb-6b05-44a1-ab86-1e63accf98f1"
 Parent: "8373e4e5-c79c-4123-9284-babd9601c565"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_HasDynamicPlaceholder/Page Layout
+Path: /sitecore/templates/Foundation/SiteExtensions/ParametersTemplate_HasDynamicPlaceholder/Page Layout
 DB: master
 Languages:
 - Language: en

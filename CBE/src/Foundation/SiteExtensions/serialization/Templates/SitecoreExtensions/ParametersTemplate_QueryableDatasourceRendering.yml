@@ -2,7 +2,7 @@
 ID: "4738312c-22b8-4e77-9b9c-86bcdcee6635"
 Parent: "5fd62cdc-bd6e-408c-b88f-9d9c41462cd8"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Foundation/SitecoreExtensions/ParametersTemplate_QueryableDatasourceRendering
+Path: /sitecore/templates/Foundation/SiteExtensions/ParametersTemplate_QueryableDatasourceRendering
 DB: master
 SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
