@@ -1,5 +1,6 @@
 ﻿namespace CBE.Foundation.Accounts.Providers
 {
+    using CBE.Foundation.DependencyInjection;
     using Sitecore.Analytics;
     using Sitecore.Analytics.Model;
     using Sitecore.Analytics.Tracking;
@@ -9,6 +10,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    [Service(typeof(IContactFacetsProvider), Lifetime = Lifetime.Transient)]
     public class ContactFacetsProvider : IContactFacetsProvider
     {
         public IEnumerable<IBehaviorProfileContext> BehaviorProfiles => this.Contact?.BehaviorProfiles.Profiles ?? Enumerable.Empty<IBehaviorProfileContext>();

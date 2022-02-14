@@ -1,13 +1,15 @@
 ﻿namespace CBE.Foundation.Accounts.Pipelines
 {
     using Sitecore.Analytics;
+    using CBE.Foundation.DependencyInjection;
     using Sitecore.Pipelines;
     using Sitecore.Security.Accounts;
 
+    [Service]
     public class PipelineService
     {
         public bool RunLoggedIn(User user)
-        {
+        {           
             var args = new LoggedInPipelineArgs()
             {
                 User = user,
