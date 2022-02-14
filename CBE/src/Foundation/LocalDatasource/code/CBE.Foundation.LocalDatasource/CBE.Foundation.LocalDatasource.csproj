@@ -341,7 +341,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Extensions\ItemExtensions.cs" />
     <Compile Include="Infrastructure\Events\UpdateLocalDatasourceReferences.cs" />
     <Compile Include="Infrastructure\Indexing\LocalDatasourceContentField.cs" />
@@ -355,12 +354,8 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.LocalDatasource.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\Include\Foundation\Foundation.LocalDatasource.Serialization.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Config\Include\Foundation\Foundation.LocalDatasource.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.LocalDatasource.Serialization.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
@@ -373,6 +368,10 @@
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\DependencyInjection\code\CBE.Foundation.DependencyInjection\CBE.Foundation.DependencyInjection.csproj">
+      <Project>{db025e84-3eba-423e-bc36-c2fc5f2bb289}</Project>
+      <Name>CBE.Foundation.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Indexing\code\CBE.Foundation.Indexing\CBE.Foundation.Indexing.csproj">
       <Project>{d10518c9-fe21-4279-bbdc-cbbae7545aa3}</Project>
       <Name>CBE.Foundation.Indexing</Name>
