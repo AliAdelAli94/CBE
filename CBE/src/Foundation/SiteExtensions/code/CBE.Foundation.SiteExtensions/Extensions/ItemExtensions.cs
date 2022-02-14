@@ -13,7 +13,6 @@
     using CBE.Foundation.SiteExtensions.Services;
     using Sitecore.Links;
     using Sitecore.Resources.Media;
-    using Sitecore;
 
     public static class ItemExtensions
     {
@@ -51,7 +50,7 @@
 
             var options = new MediaUrlOptions { Height = height, Width = width };
             var url = MediaManager.GetMediaUrl(mediaItem, options);
-            var cleanUrl = StringUtil.EnsurePrefix('/', url);
+            var cleanUrl = Sitecore.StringUtil.EnsurePrefix('/', url);
             var hashedUrl = HashingUtils.ProtectAssetUrl(cleanUrl);
 
             return hashedUrl;

@@ -1,11 +1,13 @@
 ﻿namespace CBE.Foundation.SiteExtensions.Repositories
 {
-    using Sitecore.Diagnostics;
-    using Sitecore.Mvc.Presentation;
-    using Sitecore.Reflection;
     using System;
     using System.Linq;
+    using Sitecore.Diagnostics;
+    using CBE.Foundation.DependencyInjection;
+    using Sitecore.Mvc.Presentation;
+    using Sitecore.Reflection;
 
+    [Service(typeof(IRenderingPropertiesRepository))]
     public class RenderingPropertiesRepository : IRenderingPropertiesRepository
     {
         public T Get<T>(Rendering rendering)

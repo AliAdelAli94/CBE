@@ -1,7 +1,6 @@
 ﻿namespace CBE.Foundation.SiteExtensions.Extensions
 {
     using System;
-    using Sitecore;
     using Sitecore.Mvc.Presentation;
     using Sitecore.Resources.Media;
     using Sitecore.Xml;
@@ -27,7 +26,7 @@
 
         public static bool GetUseStaticPlaceholderNames(this Rendering rendering)
         {
-            return MainUtil.GetBool(rendering.Parameters[CBE.Foundation.SiteExtensions.Constants.DynamicPlaceholdersLayoutParameters.UseStaticPlaceholderNames], false);
+            return Sitecore.MainUtil.GetBool(rendering.Parameters[Constants.DynamicPlaceholdersLayoutParameters.UseStaticPlaceholderNames], false);
         }
     }
 }

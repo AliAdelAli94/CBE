@@ -590,24 +590,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IRenderingPropertiesRepository.cs" />
     <Compile Include="Repositories\RenderingPropertiesRepository.cs" />
-    <Compile Include="ServicesConfigurator.cs" />
     <Compile Include="Services\FieldRendererService.cs" />
     <Compile Include="Services\ITrackerService.cs" />
     <Compile Include="Services\TrackerService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.SiteExtensions.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\Include\Foundation\Foundation.SiteExtensions.PerformanceTweaks.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\Include\Foundation\Foundation.SiteExtensions.Serialization.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\layers.config.xdt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Config\Include\Foundation\Foundation.SitecoreExtensions.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.SitecoreExtensions.PerformanceTweaks.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.SitecoreExtensions.Serialization.config" />
+    <Content Include="App_Config\layers.config.xdt" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
@@ -619,7 +610,12 @@
     </Content>
     <None Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\DependencyInjection\code\CBE.Foundation.DependencyInjection\CBE.Foundation.DependencyInjection.csproj">
+      <Project>{db025e84-3eba-423e-bc36-c2fc5f2bb289}</Project>
+      <Name>CBE.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
