@@ -131,6 +131,7 @@
     <Content Include="App_Config\layers.config.xdt" />
     <Content Include="Settings.StyleCop" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Website\Layouts\Default.cshtml" />
     <None Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
