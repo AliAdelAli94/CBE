@@ -5,8 +5,10 @@
     using Sitecore.Data;
     using Sitecore.Data.Items;
     using Sitecore.ExperienceEditor.Abstractions;
+    using CBE.Foundation.DependencyInjection;
     using Sitecore.Shell.Applications.WebEdit;
 
+    [Service(typeof(IGetFieldsToEditService))]
     public class GetFieldsToEditService : IGetFieldsToEditService
     {
         private readonly BaseItemContentService itemContentService;
