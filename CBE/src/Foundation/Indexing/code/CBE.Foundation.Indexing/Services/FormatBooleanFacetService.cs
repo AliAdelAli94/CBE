@@ -3,12 +3,14 @@ namespace CBE.Foundation.Indexing.Services
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.Dictionary.Repositories;
     using CBE.Foundation.Indexing.Models;
 
+    [Service]
     public class FormatBooleanFacetService
     {
-        private readonly IDictionary<string, bool> booleanValues = new Dictionary<string, bool> { { "0", false }, { "1", true }, { "yes", true }, { "no", false }, { "true", true }, { "false", false } };
+        private readonly IDictionary<string, bool> booleanValues = new Dictionary<string, bool> { {"0", false}, { "1", true }, { "yes", true }, { "no", false }, { "true", true }, { "false", false } };
 
         private bool IsBoolean(ISearchResultFacet facet)
         {

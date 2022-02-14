@@ -341,7 +341,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Infrastructure\Fields\HasPresentationComputedField.cs" />
     <Compile Include="Infrastructure\Fields\HasSearchResultFormatterComputedField.cs" />
@@ -377,12 +376,8 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.Indexing.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\Include\Foundation\Foundation.Indexing.Serialization.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Config\Include\Foundation\Foundation.Indexing.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Indexing.Serialization.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
@@ -395,6 +390,10 @@
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\DependencyInjection\code\CBE.Foundation.DependencyInjection\CBE.Foundation.DependencyInjection.csproj">
+      <Project>{db025e84-3eba-423e-bc36-c2fc5f2bb289}</Project>
+      <Name>CBE.Foundation.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Dictionary\code\CBE.Foundation.Dictionary\CBE.Foundation.Dictionary.csproj">
       <Project>{ebd61ee0-88bf-4d76-b300-475aa3494226}</Project>
       <Name>CBE.Foundation.Dictionary</Name>

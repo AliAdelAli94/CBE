@@ -5,10 +5,12 @@
     using System.Linq;
     using Sitecore.ContentSearch.Linq;
     using Sitecore.ContentSearch.SearchTypes;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.Indexing.Models;
     using CBE.Foundation.Indexing.Services;
     using Sitecore.Mvc.Common;
 
+    [Service]
     public class SearchResultsFactory
     {
         public SearchResultsFactory(FormatBooleanFacetService formatBooleanFacetService)

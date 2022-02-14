@@ -87,7 +87,7 @@ namespace CBE.Foundation.Indexing.Infrastructure.Fields
                 var resultCount = list[0].MinimumResultCount;
                 var fieldNames = new[] { args.FieldNameTranslator.GetIndexFieldName(this.FieldName) };
                 facetQueries.Add(new FacetQuery(null, fieldNames, resultCount, null));
-                list.ForEach(delegate (FacetQuery f) { facetQueries.Remove(f); });
+                list.ForEach(delegate (FacetQuery f) {facetQueries.Remove(f);});
             }
 
             return new GetFacetsArgs(args.BaseQuery, facetQueries, args.VirtualFieldProcessors, args.FieldNameTranslator);
