@@ -336,15 +336,11 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Feature\Feature.Language.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\Include\Feature\Feature.Language.Serialization.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
-    <Content Include="Views\Language\LanguageSelector.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.Language.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Language.Serialization.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Language\LanguageSelector.cshtml" />
     <None Include="Web.config" />
     <Content Include="Scripts\Language\language.js" />
     <Content Include="Web.Debug.config">
@@ -356,6 +352,10 @@
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Foundation\DependencyInjection\code\CBE.Foundation.DependencyInjection\CBE.Foundation.DependencyInjection.csproj">
+      <Project>{db025e84-3eba-423e-bc36-c2fc5f2bb289}</Project>
+      <Name>CBE.Foundation.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\Foundation\Multisite\code\CBE.Foundation.Multisite\CBE.Foundation.Multisite.csproj">
       <Project>{09e81654-ae64-46c4-82e3-0a68c39563c3}</Project>
       <Name>CBE.Foundation.Multisite</Name>

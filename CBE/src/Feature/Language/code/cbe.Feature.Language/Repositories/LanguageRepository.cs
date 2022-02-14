@@ -7,12 +7,14 @@
     using Sitecore.Data.Fields;
     using Sitecore.DependencyInjection;
     using CBE.Feature.Language.Models;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.Multisite;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore.Globalization;
     using Sitecore.Links;
     using Sitecore;
 
+    [Service(typeof(ILanguageRepository))]
     public class LanguageRepository : ILanguageRepository
     {
         private SiteContext SiteContext { get; }
