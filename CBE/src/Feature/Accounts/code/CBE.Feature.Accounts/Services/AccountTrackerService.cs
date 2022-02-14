@@ -3,10 +3,12 @@
     using System;
     using Sitecore.Configuration;
     using Sitecore.Data;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Services;
     using Sitecore.Security;
     using Sitecore;
 
+    [Service(typeof(IAccountTrackerService))]
     public class AccountTrackerService : IAccountTrackerService
     {
         private readonly IAccountsSettingsService accountsSettingsService;

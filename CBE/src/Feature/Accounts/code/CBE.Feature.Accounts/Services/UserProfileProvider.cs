@@ -7,9 +7,11 @@
     using Sitecore.Data.Managers;
     using Sitecore.Data.Templates;
     using Sitecore.Diagnostics;
+    using CBE.Foundation.DependencyInjection;
     using Sitecore.Security;
     using Sitecore.SecurityModel;
 
+    [Service(typeof(IUserProfileProvider))]
     public class UserProfileProvider : IUserProfileProvider
     {
         public IDictionary<string, string> GetCustomProperties(UserProfile userProfile)

@@ -15,6 +15,7 @@
     using CBE.Foundation.SiteExtensions.Attributes;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore;
+    using CBE.Feature.Accounts;
 
     public class AccountsController : Controller
     {

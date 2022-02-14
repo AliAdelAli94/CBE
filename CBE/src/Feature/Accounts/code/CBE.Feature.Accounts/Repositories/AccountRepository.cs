@@ -5,11 +5,13 @@
     using Sitecore.Diagnostics;
     using CBE.Feature.Accounts.Services;
     using CBE.Foundation.Accounts.Pipelines;
+    using CBE.Foundation.DependencyInjection;
     using Sitecore.Pipelines;
     using Sitecore.Security.Accounts;
     using Sitecore.Security.Authentication;
     using Sitecore;
 
+    [Service(typeof(IAccountRepository))]
     public class AccountRepository : IAccountRepository
     {
         public IAccountTrackerService AccountTrackerService { get; }

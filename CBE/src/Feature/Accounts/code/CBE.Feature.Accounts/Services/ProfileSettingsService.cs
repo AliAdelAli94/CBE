@@ -6,10 +6,12 @@
     using Sitecore.Data;
     using Sitecore.Data.Items;
     using Sitecore.Diagnostics;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore.SecurityModel;
     using Sitecore;
 
+    [Service(typeof(IProfileSettingsService))]
     public class ProfileSettingsService : IProfileSettingsService
     {
         public virtual Item GetUserDefaultProfile()

@@ -1,8 +1,9 @@
-﻿using Sitecore;
-
-namespace CBE.Feature.Accounts.Services
+﻿namespace CBE.Feature.Accounts.Services
 {
+    using CBE.Foundation.DependencyInjection;
+    using Sitecore;
 
+    [Service(typeof(INotificationService))]
     public class NotificationService : INotificationService
     {
         private readonly IAccountsSettingsService siteSettings;

@@ -2,9 +2,11 @@
 {
     using System;
     using System.Web;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore;
 
+    [Service(typeof(IGetRedirectUrlService))]
     public class GetRedirectUrlService : IGetRedirectUrlService
     {
         private readonly IAccountsSettingsService accountsSettingsService;

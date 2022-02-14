@@ -12,12 +12,14 @@
     using Sitecore.Diagnostics;
     using CBE.Feature.Accounts.Services.FacetUpdaters;
     using CBE.Foundation.Accounts.Providers;
+    using CBE.Foundation.DependencyInjection;
     using Sitecore.Security;
     using Sitecore.XConnect;
     using Sitecore.XConnect.Client;
     using Sitecore.XConnect.Client.Configuration;
     using Sitecore.XConnect.Collection.Model;
 
+    [Service(typeof(IUpdateContactFacetsService))]
     public class UpdateContactFacetsService : IUpdateContactFacetsService
     {
         private readonly IXdbContextFactory xdbContextFactory;

@@ -8,10 +8,11 @@
     using Sitecore.Data.Items;
     using Sitecore.Diagnostics;
     using Sitecore.Exceptions;
-
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore;
 
+    [Service(typeof(IAccountsSettingsService))]
     public class AccountsSettingsService : IAccountsSettingsService
     {
         public static readonly string PageNotFoundUrl = Settings.GetSetting("CBE.Feature.Accounts.PageNotFoundUrl", "/404");

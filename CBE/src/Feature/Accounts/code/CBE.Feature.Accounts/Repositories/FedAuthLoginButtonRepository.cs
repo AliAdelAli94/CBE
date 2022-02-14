@@ -7,11 +7,13 @@
     using Sitecore.Data;
     using CBE.Feature.Accounts.Models;
     using CBE.Feature.Accounts.Services;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.Dictionary.Repositories;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore.Pipelines.GetSignInUrlInfo;
     using Sitecore;
 
+    [Service(typeof(IFedAuthLoginButtonRepository))]
     public class FedAuthLoginButtonRepository : IFedAuthLoginButtonRepository
     {
         public FedAuthLoginButtonRepository(BaseCorePipelineManager pipelineManager, IAccountsSettingsService accountsSettingsService)

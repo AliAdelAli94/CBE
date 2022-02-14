@@ -4,11 +4,12 @@
     using Sitecore.Analytics;
     using Sitecore.Analytics.Model;
     using Sitecore.Analytics.Tracking;
-
+    using CBE.Foundation.DependencyInjection;
 
     /// <summary>
     /// ContactManager cannot be easily mocked, so we wrap it in a simple service.
     /// </summary>
+    [Service(typeof(IContactManagerService))]
     public class ContactManagerService : IContactManagerService
     {
         private readonly ContactManager contactManager;

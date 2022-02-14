@@ -12,7 +12,7 @@
 
         public RedirectUnauthenticatedAttribute() : this(ServiceLocator.ServiceProvider.GetService<IGetRedirectUrlService>())
         {
-
+            
         }
 
         public RedirectUnauthenticatedAttribute(IGetRedirectUrlService getRedirectUrlService)

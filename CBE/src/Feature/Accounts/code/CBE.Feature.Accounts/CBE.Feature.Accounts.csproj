@@ -688,7 +688,6 @@
     <Compile Include="Repositories\IAccountRepository.cs" />
     <Compile Include="Repositories\IFedAuthLoginButtonRepository.cs" />
     <Compile Include="ServiceRegistration.cs" />
-    <Compile Include="ServicesConfigurator.cs" />
     <Compile Include="Services\AccountsSettingsService.cs" />
     <Compile Include="Services\AccountTrackerService.cs" />
     <Compile Include="Services\AuthenticationStatus.cs" />
@@ -721,41 +720,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
-    <Content Include="Scripts\Accounts\Accounts.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Accounts\AccountsMenu.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Accounts\EditProfile.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Accounts\ForgotPassword.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Accounts\Login.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Accounts\LoginTeaser.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Accounts\Register.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Accounts\_FedAuth.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Views\Accounts\_Login.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\Include\Feature\Feature.Accounts.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\Include\Feature\Feature.Accounts.Serialization.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Config\Include\Feature\Feature.Accounts.config" />
+    <Content Include="App_Config\Include\Feature\Feature.Accounts.Serialization.config" />
+    <Content Include="App_Config\Security\Domains.config.xdt" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\Accounts\AccountsMenu.cshtml" />
+    <Content Include="Views\Accounts\EditProfile.cshtml" />
+    <Content Include="Views\Accounts\ForgotPassword.cshtml" />
+    <Content Include="Views\Accounts\Login.cshtml" />
+    <Content Include="Views\Accounts\LoginTeaser.cshtml" />
+    <Content Include="Views\Accounts\Register.cshtml" />
+    <Content Include="Views\Accounts\_FedAuth.cshtml" />
+    <Content Include="Views\Accounts\_Login.cshtml" />
     <None Include="Web.config" />
+    <Content Include="Scripts\Accounts\Accounts.js" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -773,6 +751,10 @@
       <Project>{c6e3792b-c536-4f08-947d-9f2eb43f3e3c}</Project>
       <Name>CBE.Foundation.Alerts</Name>
       <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Foundation\DependencyInjection\code\CBE.Foundation.DependencyInjection\CBE.Foundation.DependencyInjection.csproj">
+      <Project>{db025e84-3eba-423e-bc36-c2fc5f2bb289}</Project>
+      <Name>CBE.Foundation.DependencyInjection</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Foundation\Dictionary\code\CBE.Foundation.Dictionary\CBE.Foundation.Dictionary.csproj">
       <Project>{ebd61ee0-88bf-4d76-b300-475aa3494226}</Project>

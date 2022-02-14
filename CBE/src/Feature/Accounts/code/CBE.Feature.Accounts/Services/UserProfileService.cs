@@ -7,14 +7,13 @@
     using Sitecore.Data;
     using Sitecore.Data.Items;
     using CBE.Feature.Accounts.Models;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.Dictionary.Repositories;
     using Sitecore.Security;
     using Sitecore.Security.Accounts;
     using Sitecore.SecurityModel;
-    using Sitecore;
-    using CBE.Feature.Accounts;
-    using Constants = Constants;
 
+    [Service(typeof(IUserProfileService))]
     public class UserProfileService : IUserProfileService
     {
         private readonly IProfileSettingsService profileSettingsService;
@@ -85,7 +84,7 @@
         }
         private void SetProfileIfEmpty(User user)
         {
-            if (Context.User.Profile.ProfileItemId != null)
+            if (Sitecore.Context.User.Profile.ProfileItemId != null)
                 return;
 
             user.Profile.ProfileItemId = this.GetUserDefaultProfileId();

@@ -2,6 +2,7 @@
 {
     using CBE.Feature.Accounts.Services;
     using CBE.Foundation.Accounts.Pipelines;
+    using CBE.Foundation.DependencyInjection;
 
     public class TrackRegistered
     {

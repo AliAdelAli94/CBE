@@ -23,10 +23,10 @@
         {
             //Do not track the user signin if this is a response to a membership provider login
             var provider = this.GetProvider(args.Context.Identity);
-            if (provider.Name == Sitecore.Owin.Authentication.Constants.LocalIdentityProvider)
-            {
-                return;
-            }
+            //if (provider.Name == Owin.Authentication.Constants.LocalIdentityProvider)
+            //{
+            //    return;
+            //}
 
             if (Tracker.Current == null)
             {
