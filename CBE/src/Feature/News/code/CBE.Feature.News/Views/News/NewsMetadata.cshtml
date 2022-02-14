@@ -1,0 +1,15 @@
+﻿@using Sitecore.Feature.News
+@using CBE.Foundation.Alerts
+@using CBE.Foundation.Alerts.Extensions
+@using CBE.Foundation.SiteExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@if (!Model?.Item?.DescendsFrom(Templates.NewsArticle.ID) ?? true)
+{
+  @Html.PageEditorError(AlertTexts.InvalidDataSourceTemplate(Templates.NewsArticle.ID), AlertTexts.InvalidDataSourceTemplateFriendlyMessage, Model.Item?.ID, Model.Rendering.Item?.ID)
+  return;
+}
+
+<div class="thumbnail m-b-1">
+  @Html.Sitecore().ImageField(Templates.NewsArticle.Fields.Image, Model.Item, mw: 500)
+</div>

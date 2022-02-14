@@ -1,0 +1,15 @@
+﻿@using CBE.Feature.Identity
+@using CBE.Feature.Identity.Repositories
+@using CBE.Foundation.SiteExtensions.Extensions
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+  var identity = IdentityRepository.Get(Model.Item);
+  if (identity == null)
+  {
+    return;
+  }
+}
+<small class="copyright">
+  @Html.Sitecore().Field(Templates.Identity.Fields.Copyright, identity)
+</small>
