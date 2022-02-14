@@ -2,7 +2,9 @@
 {
     using System;
     using Sitecore.Data.Items;
+    using CBE.Foundation.DependencyInjection;
 
+    [Service(typeof(IDatasourceProvider))]
     public class DatasourceProvider : IDatasourceProvider
     {
         public const string DatasourceSettingsName = "datasources";
@@ -34,7 +36,7 @@
             }
 
             var sourceRootItem = contextItem.Database.GetItem(datasourceRoot);
-            return sourceRootItem != null ? new[] { sourceRootItem } : new Item[] { };
+            return sourceRootItem != null ? new[] {sourceRootItem} : new Item[] { };
         }
 
         public Item GetDatasourceTemplate(Item contextItem, string settingName)
@@ -49,7 +51,7 @@
         {
             var path = contextItem.Paths.FullPath + relativePath.Remove(0, 1);
             var root = contextItem.Database.GetItem(path);
-            return root != null ? new[] { root } : new Item[] { };
+            return root != null ? new[] {root} : new Item[] { };
         }
 
         private Item[] GetRootsFromQuery(Item contextItem, string query)

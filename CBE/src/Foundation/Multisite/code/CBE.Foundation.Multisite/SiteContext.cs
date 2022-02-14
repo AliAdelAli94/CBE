@@ -2,8 +2,10 @@
 {
     using Sitecore.Data.Items;
     using Sitecore.Diagnostics;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.Multisite.Providers;
 
+    [Service]
     public class SiteContext
     {
         private readonly ISiteDefinitionsProvider siteDefinitionsProvider;

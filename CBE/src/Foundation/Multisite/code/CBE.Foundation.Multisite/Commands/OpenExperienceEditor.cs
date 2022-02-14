@@ -1,7 +1,6 @@
 ﻿namespace CBE.Foundation.Multisite.Commands
 {
     using Sitecore.Configuration;
-    using Sitecore.Shell.Applications.WebEdit.Commands;
     using Sitecore.Sites;
     using Sitecore.Web;
     using Sitecore.Web.UI.Sheer;
@@ -10,7 +9,7 @@
     /// Overrides default Shell.Applications.WebEdit.Commands.OpenExperienceEditor
     /// Uses domain to resolve site for editing
     /// </summary>
-    public class OpenExperienceEditorChild : OpenExperienceEditor
+    public class OpenExperienceEditor : Sitecore.Shell.Applications.WebEdit.Commands.OpenExperienceEditor
     {
         private const string DefaultSiteSetting = "Preview.DefaultSite";
 

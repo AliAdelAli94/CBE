@@ -1,9 +1,11 @@
 ﻿namespace CBE.Foundation.Multisite.Pipelines
 {
     using Sitecore.Diagnostics;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.Multisite.Providers;
     using Sitecore.Pipelines.GetRenderingDatasource;
 
+    [Service]
     public class GetDatasourceLocationAndTemplateFromSite
     {
         //Sitecore has no constant in FieldIDs for this standard field

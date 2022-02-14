@@ -3,8 +3,10 @@
     using System.Linq;
     using Sitecore.Configuration;
     using Sitecore.Data.Items;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Extensions;
 
+    [Service(typeof(ISiteSettingsProvider))]
     public class SiteSettingsProvider : ISiteSettingsProvider
     {
         private readonly SiteContext siteContext;

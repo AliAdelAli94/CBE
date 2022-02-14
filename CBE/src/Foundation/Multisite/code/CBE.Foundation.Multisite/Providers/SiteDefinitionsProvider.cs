@@ -7,11 +7,13 @@
     using Sitecore.Abstractions;
     using Sitecore.Data;
     using Sitecore.Data.Items;
+    using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore.Sites;
     using Sitecore.Web;
     using Sitecore;
 
+    [Service(typeof(ISiteDefinitionsProvider))]
     public class SiteDefinitionsProvider : ISiteDefinitionsProvider
     {
         private IEnumerable<SiteDefinition> siteDefinitions;

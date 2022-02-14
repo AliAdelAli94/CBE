@@ -406,12 +406,8 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Foundation\Foundation.Multisite.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Config\Include\Foundation\Foundation.Multisite.Serialization.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Config\Include\Foundation\Foundation.Multisite.config" />
+    <Content Include="App_Config\Include\Foundation\Foundation.Multisite.Serialization.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
@@ -425,6 +421,10 @@
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\DependencyInjection\code\CBE.Foundation.DependencyInjection\CBE.Foundation.DependencyInjection.csproj">
+      <Project>{db025e84-3eba-423e-bc36-c2fc5f2bb289}</Project>
+      <Name>CBE.Foundation.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\SiteExtensions\code\CBE.Foundation.SiteExtensions\CBE.Foundation.SiteExtensions.csproj">
       <Project>{d6e9e347-fbf1-4589-b567-7d7ef0f4a623}</Project>
       <Name>CBE.Foundation.SiteExtensions</Name>
