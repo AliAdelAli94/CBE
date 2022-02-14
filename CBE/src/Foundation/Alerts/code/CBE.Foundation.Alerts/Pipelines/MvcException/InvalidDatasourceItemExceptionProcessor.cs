@@ -5,9 +5,6 @@
     using CBE.Foundation.Alerts.Exceptions;
     using CBE.Foundation.Alerts.Models;
     using Sitecore.Mvc.Pipelines.MvcEvents.Exception;
-    using Sitecore;
-    using CBE.Foundation.Alerts;
-    using Constants = Constants;
 
     public class InvalidDatasourceItemExceptionProcessor
     {
@@ -28,7 +25,7 @@
                 return;
             Log.Error(dataSourceException.Message, dataSourceException, this);
 
-            if (Context.PageMode.IsNormal)
+            if (Sitecore.Context.PageMode.IsNormal)
             {
                 exceptionContext.Result = new EmptyResult();
             }
