@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
+﻿namespace CBE.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
 {
     using CBE.Foundation.DependencyInjection;
 

@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.PageContent
+﻿namespace CBE.Feature.PageContent
 {
     using Sitecore.Data;
 

@@ -719,11 +719,10 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
     <Content Include="App_Config\Include\Feature\Feature.Accounts.config" />
     <Content Include="App_Config\Include\Feature\Feature.Accounts.Serialization.config" />
     <Content Include="App_Config\Security\Domains.config.xdt" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
     <Content Include="Views\Accounts\AccountsMenu.cshtml" />
     <Content Include="Views\Accounts\EditProfile.cshtml" />
     <Content Include="Views\Accounts\ForgotPassword.cshtml" />
@@ -732,6 +731,7 @@
     <Content Include="Views\Accounts\Register.cshtml" />
     <Content Include="Views\Accounts\_FedAuth.cshtml" />
     <Content Include="Views\Accounts\_Login.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Scripts\Accounts\Accounts.js" />
     <Content Include="Web.Debug.config">

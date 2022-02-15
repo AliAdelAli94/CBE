@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Multisite.Models
+﻿namespace CBE.Feature.Multisite.Models
 {
   using System.Collections.Generic;
   using System.Linq;

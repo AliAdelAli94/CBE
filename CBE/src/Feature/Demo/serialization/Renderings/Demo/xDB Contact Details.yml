@@ -17,7 +17,7 @@ SharedFields:
   Value: "{24D6D94B-FF87-4A6C-9AA0-4CBF21488C05}"
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Feature.Demo.Controllers.DemoController, Sitecore.Feature.Demo
+  Value: CBE.Feature.Demo.Controllers.DemoController, CBE.Feature.Demo
 Languages:
 - Language: en
   Versions:

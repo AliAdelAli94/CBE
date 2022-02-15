@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.News
+﻿namespace CBE.Feature.News
 {
   using Sitecore.Data;
 

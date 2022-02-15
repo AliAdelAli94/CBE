@@ -1,4 +1,4 @@
-namespace Sitecore.Feature.Metadata.Models
+namespace CBE.Feature.Metadata.Models
 {
     using System.Collections.Generic;
 

@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.News.Indexing
+﻿namespace CBE.Feature.News.Indexing
 {
     using System;
     using System.Collections.Generic;

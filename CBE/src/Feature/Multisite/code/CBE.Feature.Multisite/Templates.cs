@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Multisite
+﻿namespace CBE.Feature.Multisite
 {
   using Sitecore.Data;
 

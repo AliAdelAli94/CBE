@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.PageContent.Indexing
+﻿namespace CBE.Feature.PageContent.Indexing
 {
     using System;
     using System.Collections.Generic;

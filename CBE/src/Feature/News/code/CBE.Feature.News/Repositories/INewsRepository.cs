@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.News.Repositories
+﻿namespace CBE.Feature.News.Repositories
 {
   using System.Collections.Generic;
   using Sitecore.Data.Items;

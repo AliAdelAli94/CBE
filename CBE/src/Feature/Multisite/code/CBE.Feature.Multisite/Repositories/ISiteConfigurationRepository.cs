@@ -1,6 +1,6 @@
-﻿namespace Sitecore.Feature.Multisite.Repositories
+﻿namespace CBE.Feature.Multisite.Repositories
 {
-  using Sitecore.Feature.Multisite.Models;
+  using CBE.Feature.Multisite.Models;
 
   public interface ISiteConfigurationRepository
   {

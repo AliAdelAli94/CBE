@@ -1,10 +1,10 @@
-﻿namespace Sitecore.Feature.Multisite.Repositories
+﻿namespace CBE.Feature.Multisite.Repositories
 {
     using System.Collections.Generic;
     using System.Linq;
     using Sitecore.Configuration;
     using Sitecore.Data.Items;
-    using Sitecore.Feature.Multisite.Models;
+    using CBE.Feature.Multisite.Models;
     using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.Multisite;
     using CBE.Foundation.Multisite.Providers;

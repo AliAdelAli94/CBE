@@ -23,7 +23,7 @@ SharedFields:
   Value: SearchResultsHeader
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Feature.Search.Controllers.SearchController, Sitecore.Feature.Search
+  Value: CBE.Feature.Search.Controllers.SearchController, CBE.Feature.Search
 Languages:
 - Language: en
   Versions:

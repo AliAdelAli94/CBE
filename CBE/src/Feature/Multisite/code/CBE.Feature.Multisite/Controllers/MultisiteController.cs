@@ -1,7 +1,7 @@
-﻿namespace Sitecore.Feature.Multisite.Controllers
+﻿namespace CBE.Feature.Multisite.Controllers
 {
   using System.Web.Mvc;
-  using Sitecore.Feature.Multisite.Repositories;
+  using CBE.Feature.Multisite.Repositories;
 
   public class MultisiteController : Controller
   {

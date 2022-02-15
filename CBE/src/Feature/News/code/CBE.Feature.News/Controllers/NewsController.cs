@@ -1,7 +1,7 @@
-﻿namespace Sitecore.Feature.News.Controllers
+﻿namespace CBE.Feature.News.Controllers
 {
     using System.Web.Mvc;
-    using Sitecore.Feature.News.Repositories;
+    using CBE.Feature.News.Repositories;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore.Mvc.Presentation;
 

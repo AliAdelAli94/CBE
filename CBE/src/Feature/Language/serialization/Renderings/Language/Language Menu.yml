@@ -13,7 +13,7 @@ SharedFields:
   Value: /scripts/language/language.js
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Feature.Language.Controllers.LanguageController, Sitecore.Feature.Language
+  Value: CBE.Feature.Language.Controllers.LanguageController, CBE.Feature.Language
 Languages:
 - Language: en
   Versions:

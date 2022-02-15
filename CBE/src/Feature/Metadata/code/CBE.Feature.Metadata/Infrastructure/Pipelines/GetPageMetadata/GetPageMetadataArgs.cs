@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Sitecore.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
+namespace CBE.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
 {
     using Sitecore.Data.Items;
-    using Sitecore.Feature.Metadata.Models;
+    using CBE.Feature.Metadata.Models;
 
     public class GetPageMetadataArgs : Sitecore.Pipelines.PipelineArgs
     {

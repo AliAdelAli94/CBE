@@ -1,6 +1,6 @@
 ﻿---
-ID: "46e41688-227a-45d5-b0d4-67cc64cdeb90"
-Parent: "562e041c-69db-4732-9c9b-2a74fbf0a300"
+ID: "f7007fc0-f6b6-401f-9351-5c4fa326bb25"
+Parent: "0af56f64-b5d7-473f-9497-1dc19265e494"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
 Path: /sitecore/system/Settings/Project/Themes
 DB: master
@@ -11,8 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220202T191315Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\admin
+      Value: 20220215T111536Z

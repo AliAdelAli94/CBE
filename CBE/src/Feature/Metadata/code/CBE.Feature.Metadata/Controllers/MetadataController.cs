@@ -1,7 +1,7 @@
-﻿namespace Sitecore.Feature.Metadata.Controllers
+﻿namespace CBE.Feature.Metadata.Controllers
 {
     using System.Web.Mvc;
-    using Sitecore.Feature.Metadata.Repositories;
+    using CBE.Feature.Metadata.Repositories;
     using CBE.Foundation.DependencyInjection;
     using Sitecore.Mvc.Controllers;
     using Sitecore.Mvc.Presentation;

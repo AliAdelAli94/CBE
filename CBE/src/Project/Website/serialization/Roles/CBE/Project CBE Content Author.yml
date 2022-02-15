@@ -1,0 +1,8 @@
+﻿---
+Role: |
+  extranet\Project CBE Content Author
+MemberOf:
+  Role: |
+    sitecore\Author
+  Role: |
+    sitecore\Designer

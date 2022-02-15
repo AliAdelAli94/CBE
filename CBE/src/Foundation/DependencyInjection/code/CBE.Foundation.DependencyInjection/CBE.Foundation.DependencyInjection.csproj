@@ -53,6 +53,9 @@
       <HintPath>..\..\..\..\..\packages\Castle.Windsor.3.2.0\lib\net45\Castle.Windsor.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Castle.Windsor.Web.Mvc, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\packages\Castle.Windsor.Web.Mvc.1.0.7\lib\net40\Castle.Windsor.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
       <Private>False</Private>
@@ -348,10 +351,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\Application.cs" />
-    <Compile Include="App_Start\Installers\MvcControllersInstaller.cs" />
-    <Compile Include="App_Start\Installers\ServicesInstaller.cs" />
-    <Compile Include="App_Start\WindsorInstallerStarter.cs" />
+    <Compile Include="CBEServiceProvider.cs" />
     <Compile Include="Infrastructure\MvcControllerServicesConfigurator.cs" />
     <Compile Include="Lifetime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -359,8 +359,8 @@
     <Compile Include="ServiceCollectionExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Readme.md" />
     <None Include="Web.config" />
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
     <Content Include="Web.Debug.config">
@@ -369,12 +369,10 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
     <Content Include="App_Config\Include\Foundation\Foundation.DependencyInjection.config" />
-    <Content Include="App_Config\Include\zzz.Sitecore.DependencyInjection.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>

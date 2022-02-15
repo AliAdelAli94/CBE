@@ -336,11 +336,11 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
     <Content Include="App_Config\Include\Feature\Feature.Language.config" />
     <Content Include="App_Config\Include\Feature\Feature.Language.Serialization.config" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
     <Content Include="Views\Language\LanguageSelector.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.config" />
     <Content Include="Scripts\Language\language.js" />
     <Content Include="Web.Debug.config">

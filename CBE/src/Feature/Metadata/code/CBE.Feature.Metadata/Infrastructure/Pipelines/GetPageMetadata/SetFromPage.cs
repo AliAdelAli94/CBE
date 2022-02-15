@@ -1,11 +1,11 @@
-﻿namespace Sitecore.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
+﻿namespace CBE.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
 {
     using System.Collections.Generic;
     using System.Linq;
     using System.Web;
     using Sitecore.Data.Fields;
     using Sitecore.Data.Items;
-    using Sitecore.Feature.Metadata.Models;
+    using CBE.Feature.Metadata.Models;
     using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Extensions;
 

@@ -1,4 +1,4 @@
-﻿namespace Sitecore.Feature.Metadata
+﻿namespace CBE.Feature.Metadata
 {
     using Sitecore.Data;
 

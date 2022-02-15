@@ -1,8 +1,9 @@
-﻿namespace Sitecore.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
+﻿namespace CBE.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata
 {
     using Sitecore.Data.Items;
     using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Extensions;
+    using Sitecore;
 
     [Service]
     public class SetFromContext

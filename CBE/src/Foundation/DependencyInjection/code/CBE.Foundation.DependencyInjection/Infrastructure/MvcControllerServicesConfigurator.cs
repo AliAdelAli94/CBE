@@ -10,6 +10,8 @@
             serviceCollection.AddMvcControllers("*.Feature.*");
             serviceCollection.AddClassesWithServiceAttribute("*.Feature.*");
             serviceCollection.AddClassesWithServiceAttribute("*.Foundation.*");
+
+            CBEServiceProvider.ServiceProvider = serviceCollection.BuildServiceProvider();
         }
     }
 }

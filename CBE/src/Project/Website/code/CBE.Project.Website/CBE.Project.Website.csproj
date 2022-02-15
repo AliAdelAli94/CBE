@@ -125,10 +125,10 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Properties\PublishProfiles\FolderProfile.pubxml.user" />
-    <Content Include="App_Config\Environment\Project\Website.Dev.config" />
+    <None Include="App_Config\Environment\Project\Website.Dev.config" />
     <Content Include="App_Config\Include\Project\Project.Website.config" />
     <Content Include="App_Config\Include\Project\Project.Website.Serialization.config" />
-    <Content Include="App_Config\layers.config.xdt" />
+    <None Include="App_Config\layers.config.xdt.example" />
     <Content Include="Settings.StyleCop" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\Website\Layouts\Default.cshtml" />

@@ -10,7 +10,7 @@ SharedFields:
   Value: EditProfile
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Sitecore.Feature.Accounts.Controllers.AccountsController, Sitecore.Feature.Accounts
+  Value: CBE.Feature.Accounts.Controllers.AccountsController, CBE.Feature.Accounts
 Languages:
 - Language: en
   Versions:

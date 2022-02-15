@@ -1,12 +1,12 @@
-﻿namespace Sitecore.Feature.Metadata.Repositories
+﻿namespace CBE.Feature.Metadata.Repositories
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using Sitecore.Data.Fields;
     using Sitecore.Data.Items;
-    using Sitecore.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata;
-    using Sitecore.Feature.Metadata.Models;
+    using CBE.Feature.Metadata.Infrastructure.Pipelines.GetPageMetadata;
+    using CBE.Feature.Metadata.Models;
     using CBE.Foundation.DependencyInjection;
     using CBE.Foundation.SiteExtensions.Extensions;
     using Sitecore.Pipelines;
