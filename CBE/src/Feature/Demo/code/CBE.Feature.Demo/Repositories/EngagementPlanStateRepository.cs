@@ -29,7 +29,7 @@ namespace CBE.Feature.Demo.Repositories
             //var enrollments = plans?.ActivityEnrollments;
 
             //return enrollments?.Select(this.CreateEngagementPlanState).ToArray() ?? Enumerable.Empty<EngagementPlanState>();
-            return null;
+            return new List<EngagementPlanState>();
         }
 
         private EngagementPlanState CreateEngagementPlanState(AutomationPlanActivityEnrollmentCacheEntry enrollment)
