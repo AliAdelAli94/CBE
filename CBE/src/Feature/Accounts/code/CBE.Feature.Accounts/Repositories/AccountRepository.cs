@@ -10,16 +10,19 @@
     using Sitecore.Security.Accounts;
     using Sitecore.Security.Authentication;
     using Sitecore;
+    using CBE.Feature.Accounts.Models;
 
     [Service(typeof(IAccountRepository))]
     public class AccountRepository : IAccountRepository
     {
         public IAccountTrackerService AccountTrackerService { get; }
         private readonly PipelineService pipelineService;
+        private readonly IUserProfileService userProfileService;
 
-        public AccountRepository(PipelineService pipelineService, IAccountTrackerService accountTrackerService)
+        public AccountRepository(PipelineService pipelineService, IAccountTrackerService accountTrackerService, IUserProfileService userProfileService)
         {
             this.AccountTrackerService = accountTrackerService;
+            this.userProfileService = userProfileService;
             this.pipelineService = pipelineService;
         }
 
@@ -68,34 +71,32 @@
             return user.ResetPassword();
         }
 
-        public void RegisterUser(string email, string password, string profileId)
+        public void RegisterUser(RegistrationInfo registrationInfo, string profileId)
         {
-            Assert.ArgumentNotNullOrEmpty(email, nameof(email));
-            Assert.ArgumentNotNullOrEmpty(password, nameof(password));
-
-            var fullName = Context.Domain.GetFullName(email);
             try
             {
+                Assert.ArgumentNotNullOrEmpty(registrationInfo.Email, nameof(registrationInfo.Email));
+                Assert.ArgumentNotNullOrEmpty(registrationInfo.Password, nameof(registrationInfo.Password));
 
+                var fullName = Context.Domain.GetFullName(registrationInfo.Email);
                 Assert.IsNotNullOrEmpty(fullName, "Can't retrieve full userName");
 
-                var user = User.Create(fullName, password);
-                user.Profile.Email = email;
+                var user = User.Create(fullName, registrationInfo.Password);
+                user.Profile.Email = registrationInfo.Email;
                 if (!string.IsNullOrEmpty(profileId))
                 {
                     user.Profile.ProfileItemId = profileId;
                 }
-
-                user.Profile.Save();
+                this.userProfileService.SaveProfile(user.Profile, registrationInfo);
                 this.pipelineService.RunRegistered(user);
             }
             catch
             {
-                AccountTrackerService.TrackRegistrationFailed(email);
+                AccountTrackerService.TrackRegistrationFailed(registrationInfo.Email);
                 throw;
             }
 
-            this.Login(email, password);
+            this.Login(registrationInfo.Email, registrationInfo.Password);
         }
     }
 }

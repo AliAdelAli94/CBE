@@ -13,5 +13,9 @@
         EditProfile GetProfile(User user);
         void SaveProfile(UserProfile userProfile, EditProfile model);
         IEnumerable<string> GetInterests();
+        RegistrationInfo GetEmptyRegistrationProfile();
+        void SaveProfile(UserProfile userProfile, RegistrationInfo model);
+
+
     }
 }

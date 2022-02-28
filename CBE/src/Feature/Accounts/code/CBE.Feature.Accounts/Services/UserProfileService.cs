@@ -34,6 +34,14 @@
             return this.profileSettingsService.GetUserDefaultProfile()?.ID?.ToString();
         }
 
+        public virtual RegistrationInfo GetEmptyRegistrationProfile()
+        {
+            return new RegistrationInfo
+            {
+                InterestTypes = this.profileSettingsService.GetInterests()
+            };
+        }
+
         public virtual EditProfile GetEmptyProfile()
         {
             return new EditProfile
@@ -62,6 +70,23 @@
         }
 
         public virtual void SaveProfile(UserProfile userProfile, EditProfile model)
+        {
+            var properties = new Dictionary<string, string>
+            {
+                [Constants.UserProfile.Fields.FirstName] = model.FirstName,
+                [Constants.UserProfile.Fields.LastName] = model.LastName,
+                [Constants.UserProfile.Fields.PhoneNumber] = model.PhoneNumber,
+                [Constants.UserProfile.Fields.Interest] = model.Interest,
+                [nameof(userProfile.Name)] = model.FirstName,
+                [nameof(userProfile.FullName)] = $"{model.FirstName} {model.LastName}".Trim()
+            };
+
+            this.userProfileProvider.SetCustomProfile(userProfile, properties);
+            this.updateContactFacetsService.UpdateContactFacets(userProfile);
+            accountTrackerService.TrackEditProfile(userProfile);
+        }
+
+        public virtual void SaveProfile(UserProfile userProfile, RegistrationInfo model)
         {
             var properties = new Dictionary<string, string>
             {
