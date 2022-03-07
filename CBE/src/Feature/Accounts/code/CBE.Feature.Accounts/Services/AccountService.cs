@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 
 namespace CBE.Feature.Accounts.Services
 {
@@ -48,7 +49,15 @@ namespace CBE.Feature.Accounts.Services
 
         public void RegisterUser(RegistrationInfo registrationInfo, string profileId)
         {
-            this.RegisterUser(registrationInfo, profileId);
+            try
+            {
+                this.AccountRepository.RegisterUser(registrationInfo, profileId);
+            }
+            catch (Exception ex)
+            {
+                AccountTrackerService.TrackRegistrationFailed(registrationInfo.Email);
+                throw;
+            }
         }
     }
 }

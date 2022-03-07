@@ -63,6 +63,8 @@
                 public static readonly ID LastName = new ID("{EE21278F-4F83-4A10-8890-66B957F3D312}");
                 public static readonly ID PhoneNumber = new ID("{F7A1605F-7BBB-4BC7-BBB4-9E0546648E1D}");
                 public static readonly ID Interest = new ID("{A5D0B0AD-CE4E-4E06-B821-F30416B7DEC9}");
+                public static readonly ID ActivationCode = new ID("{466E37DE-C2D3-48B7-92CE-43048F4C0CD9}");
+                public static readonly ID ExpireDateActivationCode = new ID("{EC7C9BCB-8C06-4106-A144-32D5749F075D}");
             }
         }
 

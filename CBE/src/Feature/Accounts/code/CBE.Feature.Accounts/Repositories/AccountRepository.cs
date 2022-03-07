@@ -73,30 +73,35 @@
 
         public void RegisterUser(RegistrationInfo registrationInfo, string profileId)
         {
-            try
+
+            Assert.ArgumentNotNullOrEmpty(registrationInfo.Email, nameof(registrationInfo.Email));
+            Assert.ArgumentNotNullOrEmpty(registrationInfo.Password, nameof(registrationInfo.Password));
+
+            var fullName = Context.Domain.GetFullName(registrationInfo.Email);
+            Assert.IsNotNullOrEmpty(fullName, "Can't retrieve full userName");
+
+            var user = User.Create(fullName, registrationInfo.Password);
+            user.Profile.Email = registrationInfo.Email;
+            if (!string.IsNullOrEmpty(profileId))
             {
-                Assert.ArgumentNotNullOrEmpty(registrationInfo.Email, nameof(registrationInfo.Email));
-                Assert.ArgumentNotNullOrEmpty(registrationInfo.Password, nameof(registrationInfo.Password));
-
-                var fullName = Context.Domain.GetFullName(registrationInfo.Email);
-                Assert.IsNotNullOrEmpty(fullName, "Can't retrieve full userName");
-
-                var user = User.Create(fullName, registrationInfo.Password);
-                user.Profile.Email = registrationInfo.Email;
-                if (!string.IsNullOrEmpty(profileId))
-                {
-                    user.Profile.ProfileItemId = profileId;
-                }
-                this.userProfileService.SaveProfile(user.Profile, registrationInfo);
-                this.pipelineService.RunRegistered(user);
+                user.Profile.ProfileItemId = profileId;
             }
-            catch
-            {
-                AccountTrackerService.TrackRegistrationFailed(registrationInfo.Email);
-                throw;
-            }
-
-            this.Login(registrationInfo.Email, registrationInfo.Password);
+            var activationCode = this.RegisterUserMemberShip(fullName);
+            this.userProfileService.SaveProfile(user.Profile, registrationInfo, activationCode);
+            this.pipelineService.RunRegistered(user);
         }
+
+        private string RegisterUserMemberShip(string fullName)
+        {
+            var ActivationCode = Guid.NewGuid().ToString();
+            // string CurrentUsername = Membership.GetUserNameByEmail(email);
+            var CurrentUser = Membership.GetUser(fullName);
+
+            CurrentUser.IsApproved = false; // Account is locked
+
+            Membership.UpdateUser(CurrentUser);
+            return ActivationCode;
+        }
+
     }
 }

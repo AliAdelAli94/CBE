@@ -86,7 +86,7 @@
             accountTrackerService.TrackEditProfile(userProfile);
         }
 
-        public virtual void SaveProfile(UserProfile userProfile, RegistrationInfo model)
+        public virtual void SaveProfile(UserProfile userProfile, RegistrationInfo model, string activationCode)
         {
             var properties = new Dictionary<string, string>
             {
@@ -94,6 +94,8 @@
                 [Constants.UserProfile.Fields.LastName] = model.LastName,
                 [Constants.UserProfile.Fields.PhoneNumber] = model.PhoneNumber,
                 [Constants.UserProfile.Fields.Interest] = model.Interest,
+                [Constants.UserProfile.Fields.ActivationCode] = activationCode,
+                [Constants.UserProfile.Fields.ExpireDateActivationCode] = DateTime.Now.AddMinutes(15).ToString(),
                 [nameof(userProfile.Name)] = model.FirstName,
                 [nameof(userProfile.FullName)] = $"{model.FirstName} {model.LastName}".Trim()
             };

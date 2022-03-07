@@ -1,5 +1,6 @@
 ﻿namespace CBE.Feature.Accounts.Services
 {
+    using System;
     using System.Collections.Generic;
     using System.Web.Mvc;
     using CBE.Feature.Accounts.Models;
@@ -14,7 +15,7 @@
         void SaveProfile(UserProfile userProfile, EditProfile model);
         IEnumerable<string> GetInterests();
         RegistrationInfo GetEmptyRegistrationProfile();
-        void SaveProfile(UserProfile userProfile, RegistrationInfo model);
+        void SaveProfile(UserProfile userProfile, RegistrationInfo model, string activationCode);
 
 
     }

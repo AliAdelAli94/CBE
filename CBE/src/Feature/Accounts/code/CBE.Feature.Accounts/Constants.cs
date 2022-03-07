@@ -5,7 +5,7 @@
     public struct Constants
     {
 
-  
+
         public struct UserProfile
         {
             public struct Fields
@@ -23,6 +23,8 @@
                 public static readonly string Timezone = "Timezone";
                 public static readonly string PictureUrl = "PictureUrl";
                 public static readonly string PictureMimeType = "PictureMimeType";
+                public static readonly string ActivationCode = "ActivationCode";
+                public static readonly string ExpireDateActivationCode = "ExpireDateActivationCode";
             }
         }
     }
