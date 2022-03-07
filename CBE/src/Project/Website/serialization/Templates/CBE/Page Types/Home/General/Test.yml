@@ -1,0 +1,21 @@
+﻿---
+ID: "eee241c3-b676-4bc6-9ad8-75be62e644ef"
+Parent: "0138bc16-e55a-4588-a822-f1e3b12034e4"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/CBE/Page Types/Home/General/Test
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: JSON
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220306T155759Z
