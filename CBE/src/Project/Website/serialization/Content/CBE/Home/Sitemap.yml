@@ -1,0 +1,26 @@
+﻿---
+ID: "c69f40b3-0b0c-4ec4-ae54-a500b27fd77a"
+Parent: "dac24edd-44fb-42ef-9ecd-1e8daf706386"
+Template: "61045645-6218-4800-9bd0-11925017ee87"
+Path: /sitecore/content/CBE/Home/Sitemap
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0ee2f208-1fee-42fc-8051-6696d49a92bf"
+      Hint: OpenGraphTitle
+      Value: Sitemap
+    - ID: "1b483e91-d8c4-4d19-ba03-462074b55936"
+      Hint: NavigationTitle
+      Value: Sitemap
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220307T220457Z
+    - ID: "c30a013f-3cc8-4961-9837-1c483277084a"
+      Hint: Title
+      Value: Sitemap
+    - ID: "ca0479ce-0bfe-4522-83de-ba688b380a78"
+      Hint: BrowserTitle
+      Value: Sitemap
