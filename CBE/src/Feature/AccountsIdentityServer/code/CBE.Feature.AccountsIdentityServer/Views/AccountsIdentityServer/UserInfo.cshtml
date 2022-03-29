@@ -1,0 +1,12 @@
+﻿<div id="user-info">
+    <span>User name (test): @Sitecore.Context.User.Name</span>
+    <span>Full Name: @Sitecore.Context.User.Profile.FullName</span>
+    <span>Email: @Sitecore.Context.User.Profile.Email</span>
+</div>
+<div id="logout">
+    @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+    {
+        @Html.Sitecore().FormHandler("UserInfo", "Logout")
+        <button type="submit">Logout</button>
+    }
+</div>
